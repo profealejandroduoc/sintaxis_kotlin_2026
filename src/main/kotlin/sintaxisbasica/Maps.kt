@@ -9,4 +9,20 @@ fun main(){
     petsMap.remove("Rex")
     println(petsMap)
 
+   /*UN DICCIONARIO ES COMO DOS LISTAS
+   * keys=("Firu","Michi")
+   * values=["Perro","Gato"]
+   * */
+
+    for ((k,v) in petsMap) {
+       println("$k: $v")
+    }
+
+   for (k in petsMap.keys){
+      println(k)
+   }
+
+   for (v in petsMap.values){
+      println(v)
+   }
 }

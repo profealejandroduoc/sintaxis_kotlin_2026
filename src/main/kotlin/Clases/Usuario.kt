@@ -1,12 +1,12 @@
-package dev.movil.sintaxisbasica
+package dev.movil.Clases
 
 import kotlin.properties.Delegates
 
 class Usuario(
     val nome: String,
-    val sobrenome: String,
-){
-    var sueldo by Delegates.notNull<Int>();
+    val sobrenome: String,)
+{
+    private var sueldo=0;
 
     fun setSueldo(sueldo:Int){
         this.sueldo = sueldo;
@@ -15,4 +15,3 @@ class Usuario(
     fun getSueldo():Int = sueldo;
 
 }
-
